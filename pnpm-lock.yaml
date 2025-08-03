@@ -215,8 +215,8 @@ importers:
         specifier: ^0.27.13
         version: 0.27.13(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       '@siamahnaf/react-form-renderer':
-        specifier: ^1.0.1
-        version: 1.0.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+        specifier: ^1.2.3
+        version: 1.2.3(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       '@siamf/react-color-pick':
         specifier: ^1.5.0
         version: 1.5.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
@@ -1745,8 +1745,8 @@ packages:
   '@rushstack/eslint-patch@1.12.0':
     resolution: {integrity: sha512-5EwMtOqvJMMa3HbmxLlF74e+3/HhwBTMcvt3nqVJgGCozO6hzIPOBlwm8mGVNR9SN2IJpxSnlxczyDjcn7qIyw==}
 
-  '@siamahnaf/react-form-renderer@1.0.1':
-    resolution: {integrity: sha512-P3SX/wsTGDX9CIZOUSZD9HSt91bNA4P5jQ1cOHvpfMg6z0geS8j8DpjMmNlCsCPw32IdZeseeLy1W9Pj6hIxZA==, tarball: https://npm.pkg.github.com/download/@siamahnaf/react-form-renderer/1.0.1/2e1a18add233edc5ff1136a2c446af4abecb8ae7}
+  '@siamahnaf/react-form-renderer@1.2.3':
+    resolution: {integrity: sha512-MHEcSc+GZ5XnK+sIZLauBkJDVObPIAnGJT12oLIraiK+AOgF1Z4+kIHTDlu7me3iviq0BeR+86KLeF6yvbIZrQ==, tarball: https://npm.pkg.github.com/download/@siamahnaf/react-form-renderer/1.2.3/bfac8af9980974339e6447dca2188702d7e80d73}
     peerDependencies:
       react: '>=19'
       react-dom: '>=19'
@@ -6329,7 +6329,7 @@ snapshots:
 
   '@rushstack/eslint-patch@1.12.0': {}
 
-  '@siamahnaf/react-form-renderer@1.0.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1)':
+  '@siamahnaf/react-form-renderer@1.2.3(react-dom@19.1.1(react@19.1.1))(react@19.1.1)':
     dependencies:
       '@floating-ui/react': 0.27.13(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       '@siamf/rating': 1.5.2(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
