@@ -1,0 +1,47 @@
+{
+  "name": "docs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@floating-ui/react": "^0.27.13",
+    "@siamahnaf/react-email-builder": "workspace:*",
+    "@siamahnaf/react-form-builder": "workspace:*",
+    "@siamf/next-progress": "^1.6.1",
+    "@siamf/rating": "^1.5.2",
+    "@siamf/react-color-pick": "^1.5.0",
+    "@siamf/react-signature-pad": "^1.0.8",
+    "@siamf/upload": "^1.2.8",
+    "@vercel/blob": "^1.1.1",
+    "framer-motion": "^12.20.2",
+    "immer": "^10.1.1",
+    "moment": "^2.30.1",
+    "next": "15.3.4",
+    "nouislider": "^15.8.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-google-recaptcha": "^3.1.0",
+    "react-google-recaptcha-v3": "^1.11.0",
+    "react-hook-form": "^7.59.0",
+    "react-hot-toast": "^2.5.2",
+    "react-turnstile": "^1.1.4",
+    "signature_pad": "^5.0.10"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4.1.11",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.4",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,1 @@
+export type ItemKeys = { id?: string, type: string };

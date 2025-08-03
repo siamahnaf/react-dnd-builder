@@ -1,0 +1,61 @@
+// babel.config.json
+{
+    "env": {
+        "esm": {
+            "presets": [
+                [
+                    "@babel/preset-env",
+                    {
+                        "targets": {
+                            "esmodules": true
+                        },
+                        "modules": false
+                    }
+                ],
+                [
+                    "@babel/preset-react",
+                    {
+                        "runtime": "automatic"
+                    }
+                ],
+                [
+                    "@babel/preset-typescript",
+                    {
+                        "allowDeclareFields": true
+                    }
+                ]
+            ],
+            "plugins": [
+                "styled-jsx/babel"
+            ]
+        },
+        "cjs": {
+            "presets": [
+                [
+                    "@babel/preset-env",
+                    {
+                        "targets": {
+                            "node": "16"
+                        },
+                        "modules": "commonjs"
+                    }
+                ],
+                [
+                    "@babel/preset-react",
+                    {
+                        "runtime": "automatic"
+                    }
+                ],
+                [
+                    "@babel/preset-typescript",
+                    {
+                        "allowDeclareFields": true
+                    }
+                ]
+            ],
+            "plugins": [
+                "styled-jsx/babel"
+            ]
+        }
+    }
+}

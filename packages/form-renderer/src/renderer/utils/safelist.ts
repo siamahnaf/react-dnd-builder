@@ -1,0 +1,17 @@
+export const className = [
+    "col-span-1",
+    "col-span-6",
+    "col-span-7",
+    "col-span-8",
+    "col-span-9",
+    "col-end-2",
+    "col-end-3",
+    "col-end-4",
+    "col-end-5",
+    "col-end-10",
+    "col-end-12",
+    "resize-none",
+    "resize",
+    "resize-x",
+    "resize-y",
+]

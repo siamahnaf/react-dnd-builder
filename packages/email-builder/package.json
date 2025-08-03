@@ -1,0 +1,70 @@
+{
+  "name": "@siamahnaf/react-email-builder",
+  "version": "1.1.6",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "author": "Siam Ahnaf",
+  "license": "ISC",
+  "keywords": [
+    "react",
+    "styled-jsx",
+    "tailwind"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:js": "npm run build:js:esm && npm run build:js:cjs",
+    "build:js:esm": "cross-env BABEL_ENV=esm babel src --extensions \".ts,.tsx\" --out-dir dist/esm --copy-files",
+    "build:js:cjs": "cross-env BABEL_ENV=cjs babel src --extensions \".ts,.tsx\" --out-dir dist/cjs --copy-files",
+    "build:css": "npx @tailwindcss/cli -i ./style/tailwind.css -o ./dist/styles.css --minify",
+    "build": "npm run clean && npm run build:types && npm run build:js && npm run build:css",
+    "dev:js": "cross-env BABEL_ENV=esm babel src --extensions \".ts,.tsx\" --out-dir dist/esm --copy-files --watch",
+    "dev:css": "npx @tailwindcss/cli -i ./style/tailwind.css -o ./dist/styles.css --watch",
+    "dev": "concurrently -n JS,TAILWIND -c green,blue \"npm:dev:js\" \"npm:dev:css\"",
+    "pub": "turbo run build && changeset version && changeset publish"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.27.2",
+    "@babel/core": "^7.27.7",
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-react": "^7.27.1",
+    "@babel/preset-typescript": "^7.27.1",
+    "@changesets/cli": "^2.29.5",
+    "@tailwindcss/cli": "^4.1.11",
+    "@types/node": "^20.19.2",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "autoprefixer": "^10.4.21",
+    "babel-plugin-transform-imports": "^2.0.0",
+    "concurrently": "^9.2.0",
+    "cross-env": "^7.0.3",
+    "postcss": "^8.5.6",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "rimraf": "^6.0.1",
+    "styled-jsx": "^5.1.7",
+    "styled-jsx-plugin-postcss": "^4.0.1",
+    "tailwindcss": "^4.1.11",
+    "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "react": ">=19",
+    "react-dom": ">=19"
+  },
+  "dependencies": {
+    "@monaco-editor/react": "^4.7.0",
+    "@siamf/react-color-pick": "^1.5.0",
+    "@siamf/tooltip": "^1.6.0",
+    "@siamf/upload": "^1.2.8",
+    "framer-motion": "^12.20.2",
+    "html-to-image": "^1.11.13",
+    "immer": "^10.1.1"
+  }
+}

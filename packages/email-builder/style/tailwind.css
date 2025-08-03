@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+    --color-builder: #2563EB;
+}
+
+@layer utilities {
+    button {
+        @apply cursor-pointer;
+    }
+}

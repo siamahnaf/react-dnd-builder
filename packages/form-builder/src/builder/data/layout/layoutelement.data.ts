@@ -1,0 +1,1 @@
+export const layoutElements = ["Panel", "Expression", "Video", "Image", "HTML"];
