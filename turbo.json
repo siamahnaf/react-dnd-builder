@@ -16,7 +16,8 @@
         "dist/**"
       ],
       "env": [
-        "BLOB_READ_WRITE_TOKEN"
+        "BLOB_READ_WRITE_TOKEN",
+        "GIT"
       ]
     },
     "lint": {

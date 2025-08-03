@@ -4,6 +4,12 @@ import Image from "next/image";
 const HomeUi = () => {
     return (
         <div className="w-[50%] text-center">
+            <div className="mb-16">
+                <p className="bg-orange-100 text-orange-600 py-2 rounded-md text-xl w-max font-semibold px-5 mx-auto">
+                    Form Builder is now Live!
+                </p>
+                <p className="mt-1 font-light">Packages & Pricing Coming Soon</p>
+            </div>
             <Image src="/logo-dark.png" width={1057} height={282} alt="Logo" className="w-[240px] mx-auto mb-8" />
             <h4 className="text-4xl font-semibold mb-2">React Drag n Drop Builder</h4>
             <p className="font-light">

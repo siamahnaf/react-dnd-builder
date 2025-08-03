@@ -1,5 +1,11 @@
 # @siamahnaf/react-form-renderer
 
+## 1.3.0
+
+### Minor Changes
+
+- Final Push
+
 ## 1.2.3
 
 ### Patch Changes

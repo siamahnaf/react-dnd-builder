@@ -1,5 +1,16 @@
 # @siamahnaf/react-form-builder
 
+## 1.3.0
+
+### Minor Changes
+
+- Final Push
+
+### Patch Changes
+
+- Updated dependencies
+  - @siamahnaf/react-form-renderer@1.3.0
+
 ## 1.2.3
 
 ### Patch Changes
