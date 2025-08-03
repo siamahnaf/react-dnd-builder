@@ -1,6 +1,6 @@
 {
   "name": "@siamahnaf/react-form-renderer",
-  "version": "1.0.1",
+  "version": "1.2.3",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
@@ -24,8 +24,7 @@
     "build": "npm run clean && npm run build:types && npm run build:js && npm run build:css",
     "dev:js": "cross-env BABEL_ENV=esm babel src --extensions \".ts,.tsx\" --out-dir dist/esm --copy-files --watch",
     "dev:css": "npx @tailwindcss/cli -i ./style/tailwind.css -o ./dist/style.css --watch",
-    "dev": "concurrently -n JS,TAILWIND -c green,blue \"npm:dev:js\" \"npm:dev:css\"",
-    "pub": "turbo run build && changeset version && changeset publish"
+    "dev": "concurrently -n JS,TAILWIND -c green,blue \"npm:dev:js\" \"npm:dev:css\""
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
@@ -36,7 +35,6 @@
     "@babel/preset-env": "^7.28.0",
     "@babel/preset-react": "^7.27.1",
     "@babel/preset-typescript": "^7.27.1",
-    "@changesets/cli": "^2.29.5",
     "@tailwindcss/cli": "^4.1.11",
     "@types/node": "^24.1.0",
     "@types/react": "^19.1.9",
